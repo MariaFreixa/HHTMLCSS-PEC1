@@ -107,6 +107,11 @@ header nav a:hover {
   text-align: center;
 }
 
+#selected {
+  background:#f56f3a;
+  border-radius:50px;
+}
+
 /* AVENTURAS y FANTASIA */
 
 .containerLibros {
@@ -156,6 +161,11 @@ header nav a:hover {
   header nav {
     line-height:50px;
   }
+
+  header nav a:hover {
+    background:#f56f3a;
+    border-radius:50px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -170,6 +180,11 @@ header nav a:hover {
 
   header nav {
     line-height:100px;
+  }
+
+  header nav a:hover {
+    background:#f56f3a;
+    border-radius:50px;
   }
 }
 
