@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
 
 :root {
-  --hoverEnlaces:#ff8000;
-  --negro: #000000;
+  --hoverEnlaces: #f56f3a;
   --blanco: #FFFF;
+  --fondoHeaderFooter: #252932;
+  --fondoListaLibros: #eaeaea;
 }
 
 html {
@@ -37,61 +38,61 @@ footer {
   margin: 0 auto;
   justify-content: center;
   color: var(--blanco);
-  font-size: 0.7rem;
-  width:100%; /* Establecemos que el footer abarque el 100% del documento */
-  overflow:hidden; /* Eliminamos errores de float */
-  background:#252932;
-  margin-top:20px;
+  font-size: 1rem;
+  width: 100%;
+  overflow: hidden;
+  background: var(--fondoHeaderFooter);
+  margin-top: 20px;
 }
 
 header {
-  width:100%; /* Establecemos que el header abarque el 100% del documento */
-  overflow:hidden; /* Eliminamos errores de float */
-  background:#252932;
-  margin-bottom:20px;
+  width: 100%;
+  overflow: hidden;
+  background: var(--fondoHeaderFooter);
+  margin-bottom: 20px;
 }
  
 header .titulo {
-  color:#f2f2f2;
-  font-size:50px;
-  line-height:200px;
+  color: var(--blanco);
+  font-size: 3.125rem;
+  line-height: 200px;
   float:left;
 }
  
 header nav {
-  float:right;
-  line-height:200px;
+  float: right;
+  line-height: 200px;
 }
  
 header nav a {
-  display:inline-block;
-  color:#fff;
-  text-decoration:none;
-  padding:10px 20px;
-  line-height:normal;
-  font-size:20px;
-  font-weight:bold;
-  -webkit-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  transition:all 500ms ease;
+  display: inline-block;
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 1.25rem;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
  
 header nav a:hover {
-  background:#f56f3a;
-  border-radius:50px;
+  background: var(--hoverEnlaces);
+  border-radius: 50px;
 }
 
 .wrapper {
-  width:90%; /* Establecemos que el ancho sera del 90% */
-  max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-  margin:auto; /* Centramos los elementos */
-  overflow:hidden; /* Eliminamos errores de float */
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .containerIndex {
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  height: 63vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,14 +103,12 @@ header nav a:hover {
 }
 
 .item {
-  /* Padding se usa para pantallas pequeñas */
-  padding: 0 30px 0 30px;
   text-align: center;
 }
 
 #selected {
-   background:#f56f3a;
-  border-radius:50px;
+  background: var(--hoverEnlaces);
+  border-radius: 50px;
 }
 
 /* AVENTURAS y FANTASIA */
@@ -130,90 +129,105 @@ header nav a:hover {
 #lista > li{
   margin-bottom: 1.5em;
   padding: 1.5em;
-  background-color: #eaeaea;
+  background-color: var(--fondoListaLibros);
 }
 
-/* Small devices (phones, 576px and up) */
- @media (min-width: 360px) {
+/* Small devices (phones, 320px and up) */
+ @media (min-width: 320px) {
+
+  html {
+    font-size: 40%;
+  }
+
  .item {
-    width:70%;
+    width: 60%;
   }
 
   header .titulo {
-    line-height:50px;
+    line-height: 50px;
   }
 
   header nav {
-    line-height:50px;
+    line-height: 50px;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) {
+
+  html {
+    font-size: 50%;
+  }
+
  .item {
-    width:70%;
+    width: 60%;
   }
 
   header .titulo {
-    line-height:50px;
+    line-height: 50px;
   }
 
   header nav {
-    line-height:50px;
-  }
-
-  header nav a:hover {
-    background:#f56f3a;
-    border-radius:50px;
+    line-height: 50px;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  html {
+    font-size: 90%;
+  }
+
   .item {
-    width:70%;
+    width: 60%;
   } 
 
   header .titulo {
-    line-height:100px;
+    line-height: 100px;
   }
 
   header nav {
-    line-height:100px;
-  }
-
-  header nav a:hover {
-    background:#f56f3a;
-    border-radius:50px;
+    line-height: 100px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+
+  html {
+    font-size: 100%;
+  }
+
   .item {
-    width:80%;
+    width: 60%;
   } 
 
   header .titulo {
-    line-height:200px;
+    line-height: 200px;
   }
 
   header nav {
-    line-height:200px;
+    line-height: 200px;
   }
 }
 
 /* xtra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  html {
+    font-size: 100%;
+  }
+
   .item {
-    width:60%;
+    width: 70%;
   }
 
   header .titulo {
-    line-height:200px;
+    line-height: 200px;
   }
   
   header nav {
-    line-height:200px;
+    line-height: 200px;
   }
 }
