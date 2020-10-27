@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
 
+:root {
+  --hoverEnlaces:#ff8000;
+  --negro: #000000;
+  --blanco: #FFFF;
+}
+
 html {
   font-size:100%;
 }
@@ -13,7 +19,6 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Oswald", sans;
   font-size: 4rem;
   font-weight: bold;
   line-height: 3.5rem;
@@ -24,4 +29,129 @@ h3 {
   line-height: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+footer {  
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  color: var(--blanco);
+  font-size: 0.7rem;
+  width:100%; /* Establecemos que el footer abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background:#252932;
+  margin-top:20px;
+}
+
+header {
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background:#252932;
+  margin-bottom:20px;
+}
+ 
+header .titulo {
+  color:#f2f2f2;
+  font-size:50px;
+  line-height:200px;
+  float:left;
+}
+ 
+header nav {
+  float:right;
+  line-height:200px;
+}
+ 
+header nav a {
+  display:inline-block;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 20px;
+  line-height:normal;
+  font-size:20px;
+  font-weight:bold;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+  background:#f56f3a;
+  border-radius:50px;
+}
+
+.wrapper {
+  width:90%; /* Establecemos que el ancho sera del 90% */
+  max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+  margin:auto; /* Centramos los elementos */
+  overflow:hidden; /* Eliminamos errores de float */
+}
+
+.containerIndex {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/1680-libros.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  /* Padding se usa para pantallas pequeñas */
+  padding: 0 30px 0 30px;
+  text-align: center;
+}
+
+/* AVENTURAS y FANTASIA */
+
+.containerLibros {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lista {
+  list-style: none; 
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#lista > li{
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  background-color: #eaeaea;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+ .item {
+    width:70%;
+  } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .item {
+    width:70%;
+  } 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .item {
+    width:80%;
+  } 
+}
+
+/* xtra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .item {
+    width:60%;
+  }
 }
