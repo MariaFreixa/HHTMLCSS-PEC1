@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2.3rem;
   line-height: 2rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -82,7 +82,7 @@ header {
   margin-bottom: 20px;
 }
 
-header .logo {
+header .wobble-hor-bottom {
   margin: 0 auto;
 }
  
@@ -158,12 +158,15 @@ header nav a:hover {
 
 #lista li p {
   text-align:justify;
+  font-size: 2em;
 }
 
 #lista li:hover {
   background: var(--fondoListaLibros);
   cursor: pointer;
+  filter: opacity(.5);
 }
+
 
 #lista li img {
   float: left;
@@ -310,7 +313,7 @@ blockquote span {
 
 /* Small devices (phones, 320px and up) */
 @media (min-width: 320px) {
-  html {
+  .html {
     font-size: 75%;
   }
 
@@ -318,7 +321,7 @@ blockquote span {
     width: 10%;
   }
  
-  .logo {
+  .wobble-hor-bottom {
     display: block;
     width: 20%;
     padding-bottom: 15px;
@@ -346,7 +349,7 @@ blockquote span {
   }
  
   #lista li img {
-    width: 50px;
+    width: 200px;
   }
  
   .articleModa img {
@@ -375,6 +378,14 @@ blockquote span {
   footer .clipPath {
     width: 30%;
   }
+
+  #navLista {
+    margin-left: 100px;
+  }
+  
+  #navLista a { 
+    font-size: 2rem;
+  }
 }
  
 /* Small devices (landscape phones, 576px and up) */
@@ -384,7 +395,7 @@ blockquote span {
      width: 60%;
    }
  
-  .logo {
+  .wobble-hor-bottom {
     display: block;
     width: 20%;
     padding-bottom: 15px;
@@ -412,7 +423,7 @@ blockquote span {
   }
  
   #lista li img {
-    width: 75px;
+    width: 200px;
   }
 
   .articleModa img {
@@ -442,6 +453,15 @@ blockquote span {
   footer .clipPath {
     width: 30%;
   }
+
+  #navLista {
+    margin-left: 330px;
+  }
+  
+  #navLista a { 
+    font-size: 1.5rem;
+  }
+
  }
  
 /* Medium devices (tablets, 768px and up) */
@@ -451,7 +471,7 @@ blockquote span {
     width: 60%;
   }
 
-  .logo {
+  .wobble-hor-bottom {
     display: block;
     width: 20%;
     padding-bottom: 15px;
@@ -479,7 +499,7 @@ blockquote span {
   }
 
   #lista li img {
-    width: 100px;
+    width: 250px;
   }
 
   .articleModa img {
@@ -509,6 +529,14 @@ blockquote span {
   footer .clipPath {
     width: 20%;
   }
+
+  #navLista {
+    margin-left: 330px;
+  }
+  
+  #navLista a { 
+    font-size: 1.5rem;
+  }
 }
  
 /* Large devices (desktops, 1024px and up) */
@@ -518,7 +546,7 @@ blockquote span {
     width: 60%;
   } 
 
-  .logo {
+  .wobble-hor-bottom {
     display: flex;
     width: 50%;
     padding-top: 10px;
@@ -545,7 +573,7 @@ blockquote span {
   }
 
   #lista li img {
-    width: 150px;
+    width: 250px;
   }
 
   .articleModa img {
@@ -575,6 +603,14 @@ blockquote span {
   footer .clipPath {
     width: 10%;
   }
+
+  #navLista {
+    margin-left: 50px;
+  }
+  
+  #navLista a { 
+    font-size: 1.25rem;
+  }
 }
  
 /* xtra large devices (large desktops, 1200px and up) */
@@ -584,7 +620,7 @@ blockquote span {
    width: 70%;
   }
 
-  .logo {
+  .wobble-hor-bottom {
     display: flex;
     width: 50%;
     padding-top: 10px;
@@ -612,11 +648,11 @@ blockquote span {
   }
 
   #lista li img {
-    width: 150px;
+    width: 250px;
   }
 
   .articleModa img {
-    width: 500px;
+    width: 355px;
   }
 
   .articleFantasia img {
@@ -641,5 +677,50 @@ blockquote span {
 
   footer .clipPath {
     width: 10%;
+  }
+}
+
+/* ANIMACIONES */
+
+.wobble-hor-bottom:hover {
+  animation: wobble-hor-bottom 0.8s infinite both;
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+#container {
+  animation: pulsate-bck 1s ease-in-out both;
+  animation-iteration-count: 2;
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
