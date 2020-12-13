@@ -215,10 +215,22 @@ header nav a:hover {
   margin: 1% 2% 1% 2%;
 }
 
+.imagen {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .volver img {
   float: left;
   width: 75px;
   margin-left: 5%;
+}
+
+.gif {
+  float: none !important;   
+  width: 40% !important;
+  height: 40% !important;
+  margin-left: 200px !important;
 }
 
 /* DETALLE LIBRO FANTASIA */
@@ -296,6 +308,7 @@ blockquote span {
   max-width: 800px;
   margin: 0 auto; 
 }
+
 .video-responsive {
     overflow:hidden;
     padding-bottom:56.25%;
@@ -303,12 +316,19 @@ blockquote span {
     position:relative;
     height:0;
 }
+
 .video-responsive iframe {
     left:0;
     top:0;
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.imagenHobbit img {
+  float: none;
+  vertical-align: bottom;
+  width: 100%;
 }
 
 /* Small devices (phones, 320px and up) */
@@ -365,7 +385,7 @@ blockquote span {
     width: 50%;
   }
  
-  .video-responsive iframe{
+  .video-responsive iframe {
     left:10%;
     height:70%;
     width:70%;
@@ -385,6 +405,13 @@ blockquote span {
   
   #navLista a { 
     font-size: 2rem;
+  }
+
+  .imagenHobbit img { 
+    float: none;   
+    width: 90% !important;
+    height: 100% !important;
+    margin-left: 5%;
   }
 }
  
@@ -412,12 +439,11 @@ blockquote span {
  
   header nav {
     display: block;
-    float: left;
     padding-bottom: 15px;
-    margin-left: 30%;
   }
 
-  header nav  a{
+  header nav  a {
+    float: left;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -462,6 +488,9 @@ blockquote span {
     font-size: 1.5rem;
   }
 
+  .imagen picture img {
+    width: 100%;
+  }
  }
  
 /* Medium devices (tablets, 768px and up) */
@@ -561,6 +590,7 @@ blockquote span {
     margin-top: 20px;
     padding-right: 30px;
     padding-left: 20px;
+    font-size: 2em;
   }
 
   header nav {
@@ -678,6 +708,10 @@ blockquote span {
   footer .clipPath {
     width: 10%;
   }
+
+  .gif {
+    margin-left: 500px !important;
+  }
 }
 
 /* ANIMACIONES */
@@ -724,3 +758,5 @@ blockquote span {
     transform: scale(1);
   }
 }
+
+

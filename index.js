@@ -1,14 +1,11 @@
 //Index container
-var elementContainer = document.getElementById('container');
-var h3 = document.createElement('h3');
+var elementContainer = document.getElementById('h3');
 var h1 = document.createElement('h1');
 var p_container = document.createElement('p');
 
-h3.textContent="Hay un millón de vidas por vivir, ¿entras?";
 h1.textContent="LA MADRIGUERA";
 p_container.textContent="Portal dedicado a ofrecer información sobre diferentes tipos de libros";
 
-elementContainer.appendChild(h3);
 elementContainer.appendChild(h1);
 elementContainer.appendChild(p_container);
 
