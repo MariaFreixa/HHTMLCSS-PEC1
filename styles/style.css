@@ -118,7 +118,7 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/1680-libros.jpg);
+  background: url(../img/1680-libros.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
