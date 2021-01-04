@@ -79,7 +79,7 @@ header {
   margin-bottom: 20px;
 }
 
-header .wobble-hor-bottom {
+header picture source .wobble-hor-bottom {
   margin: 0 auto;
 }
  
@@ -99,7 +99,6 @@ header nav a {
   display: inline;
   color: var(--blanco);
   text-decoration: none;
-  background-image:  url("../img/1680-libros.webp");
   padding: 10px 20px;
   line-height: normal;
   font-size: 1.25rem;
@@ -112,10 +111,6 @@ header nav a:hover {
   border-radius: 50px;
 }
 
-.no-webp .containerIndex { 
-  background-image:  url("../img/1680-libros.jpg");
-}
-
 .containerIndex {
   margin: 0 auto;
   width: 100%;
@@ -123,12 +118,11 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../img/1680-libros.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 .itemContainer {
   text-align: center;
